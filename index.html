@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박성빈 포트폴리오</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4F46E5',
+                        secondary: '#4338CA',
+                        accent: '#6366F1'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #4F46E5 0%, #4338CA 100%);
+        }
+        .card-hover {
+            transition: transform 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="bg-indigo-50">
+    <div class="container mx-auto px-4 py-8">
+        <!-- 헤더 섹션 -->
+        <header class="text-center mb-12">
+            <div class="mb-6">
+                <img src="사진.png" alt="프로필 이미지" class="w-32 h-32 mx-auto rounded-full bg-white p-2 shadow-lg border-4 border-primary">
+            </div>
+            <h1 class="text-4xl font-bold text-indigo-900 mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">박성빈</h1>
+            <p class="text-lg text-indigo-700 mb-4">AI를 통해 많은 개발 경험을 쌓고 있는 개발자입니다.</p>
+            <div class="flex justify-center space-x-4">
+                <a href="mailto:parkbinerang@gmail.com" class="px-4 py-2 bg-primary text-white rounded-lg text-sm hover:bg-secondary transition-colors duration-200">이메일</a>
+                <a href="https://github.com/parks205" target="_blank" class="px-4 py-2 bg-white border border-primary text-primary rounded-lg text-sm hover:bg-primary hover:text-white transition-colors duration-200">GitHub</a>
+            </div>
+        </header>
+
+        <!-- 프로젝트 섹션 -->
+        <section class="mb-12 bg-white rounded-xl shadow-lg p-8 transform transition-all duration-300 hover:shadow-2xl">
+            <h2 class="text-3xl font-bold text-indigo-900 mb-8 flex items-center"><span class="text-primary mr-2">🚀</span> Projects</h2>
+
+            <div class="mb-8 w-2/6 mx-auto">
+                <img src="haejo2.png" alt="Haejo 캡스톤 프로젝트 미리보기" class="w-full h-auto rounded-lg shadow-md mb-6" onerror="this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 1000 600\' fill=\'%23f3f4f6\'%3E%3Crect width=\'1000\' height=\'600\' /%3E%3Ctext x=\'50%25\' y=\'50%25\' font-family=\'Arial\' font-size=\'24\' fill=\'%239ca3af\' text-anchor=\'middle\' dominant-baseline=\'middle\'%3EHaejo Preview%3C/text%3E%3C/svg%3E'">
+            </div>
+
+            <!-- 프로젝트 1: 캡스톤 - Haejo -->
+            <div class="mb-8 border-b pb-6">
+                <h3 class="text-2xl font-semibold mb-3 text-indigo-900">AI 여행 일정 추천 서비스 - Haejo (캡스톤)</h3>
+                <p class="text-indigo-600 mb-2 flex items-center">
+                    <span class="inline-block mr-2">🔗</span>
+                    <a href="https://travel-planner-893.pages.dev/" target="_blank" class="hover:text-primary transition-colors duration-200">서비스 바로가기</a>
+                </p>
+                <p class="text-indigo-600 mb-2 flex items-center">
+                    <span class="inline-block mr-2">📅</span>
+                    기간: 2025.09.23 ～ 2025.12.11
+                </p>
+                <p class="text-indigo-600 mb-4 flex items-center">
+                    <span class="inline-block mr-2">👥</span>
+                    역할: 백엔드 및 데이터베이스 개발, 배포 환경 구성
+                </p>
+                <p class="text-indigo-700 mb-4 leading-relaxed">
+                    일본 도쿄 여행을 계획하는 사용자가 간단한 선호도와 여행 일정을 입력하면,
+                    AI가 일정에 맞는 관광지·동선·시간 계획을 자동으로 추천해 주는 웹 서비스입니다.
+                    Cloudflare Pages와 D1 Database를 활용해 회원가입·로그인, 일정 관리 등 핵심 기능의 백엔드를 구현하고 배포까지 담당했습니다.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-4 py-2 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium hover:bg-indigo-200 transition-colors duration-200">JavaScript</span>
+                    <span class="px-4 py-2 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium hover:bg-indigo-200 transition-colors duration-200">react</span>
+                    <span class="px-4 py-2 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium hover:bg-indigo-200 transition-colors duration-200">Cloudflare Pages</span>
+                    <span class="px-4 py-2 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium hover:bg-indigo-200 transition-colors duration-200">Cloudflare D1</span>
+                </div>
+            </div>
+
+        </section>
+        <section class="mb-12 bg-white rounded-xl shadow-lg p-8 transform transition-all duration-300 hover:shadow-2xl">
+            <h2 class="text-3xl font-bold text-indigo-900 mb-8 flex items-center"><span class="text-primary mr-2">🚀</span> Projects</h2>
+            
+            <!-- 3D 맵 이미지 -->
+            <div class="mb-8 w-2/6 mx-auto">
+                <img src="3d.png" alt="3D 맵 미리보기" class="w-full h-auto rounded-lg shadow-md mb-6" onerror="this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 1000 600\' fill=\'%23f3f4f6\'%3E%3Crect width=\'1000\' height=\'600\' /%3E%3Ctext x=\'50%\' y=\'50%\' font-family=\'Arial\' font-size=\'24\' fill=\'%239ca3af\' text-anchor=\'middle\' dominant-baseline=\'middle\'%3E3D Map Preview%3C/text%3E%3C/svg%3E'">
+            </div>
+            
+            <!-- 프로젝트 1 -->
+            <div class="mb-8 border-b pb-6">
+                <h3 class="text-2xl font-semibold mb-3 text-indigo-900">대학 3D 맵 및 강의실 예약시스템</h3>
+                <p class="text-indigo-600 mb-2 flex items-center">
+                    <span class="inline-block mr-2">📅</span>
+                    기간: 2025.04.15 ～ 2025.04.30
+                </p>
+                <p class="text-indigo-600 mb-4 flex items-center">
+                    <span class="inline-block mr-2">👥</span>
+                    역할: 프론트엔드 및 백엔드 보조
+                </p>
+                <p class="text-indigo-700 mb-4 leading-relaxed">
+                    대학 캠퍼스 건물을 3D 맵으로 구현하고, 학생들이 강의실을 손쉽게 찾고 예약할 수 있는 웹 서비스를 만드는 팀 프로젝트입니다.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-4 py-2 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium hover:bg-indigo-200 transition-colors duration-200">Three.js</span>
+                    <span class="px-4 py-2 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium hover:bg-indigo-200 transition-colors duration-200">Express.js</span>
+                    <span class="px-4 py-2 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium hover:bg-indigo-200 transition-colors duration-200">MariaDB</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 기술 스택 상세 섹션 -->
+        <section class="mb-12 bg-white rounded-xl shadow-lg p-8 transform transition-all duration-300 hover:shadow-2xl">
+            <h2 class="text-3xl font-bold text-indigo-900 mb-8 flex items-center"><span class="text-primary mr-2">🔧</span> 기술 스택</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="p-6 bg-indigo-50 rounded-lg card-hover">
+                    <div class="text-lg font-semibold text-indigo-800">Python</div>
+                </div>
+                <div class="p-6 bg-indigo-50 rounded-lg card-hover">
+                    <div class="text-lg font-semibold text-indigo-800">JavaScript</div>
+                </div>
+                <div class="p-6 bg-indigo-50 rounded-lg card-hover">
+                    <div class="text-lg font-semibold text-indigo-800">MariaDB</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 주요 경험 섹션 -->
+        <section class="mb-12 bg-white rounded-xl shadow-lg p-8 transform transition-all duration-300 hover:shadow-2xl">
+            <h2 class="text-3xl font-bold text-indigo-900 mb-8 flex items-center"><span class="text-primary mr-2">⚙</span> 주요 경험</h2>
+            <ul class="space-y-4 text-indigo-700">
+                <li class="flex items-center p-4 bg-indigo-50 rounded-lg">
+                    <span class="text-primary mr-3">▹</span>
+                    백엔드 및 데이터베이스 설계/연동 (Cloudflare D1, MariaDB)
+                </li>
+                <li class="flex items-center p-4 bg-indigo-50 rounded-lg">
+                    <span class="text-primary mr-3">▹</span>
+                    웹 서비스 기획부터 배포까지의 전체 플로우 경험 (Cloudflare Pages)
+                </li>
+                <li class="flex items-center p-4 bg-indigo-50 rounded-lg">
+                    <span class="text-primary mr-3">▹</span>
+                    팀 프로젝트에서의 역할 분담 및 Discord를 활용한 협업 커뮤니케이션
+                </li>
+                <li class="flex items-center p-4 bg-indigo-50 rounded-lg">
+                    <span class="text-primary mr-3">▹</span>
+                    AI를 활용한 기능 설계 및 일정 추천 로직 개발 경험
+                </li>
+            </ul>
+        </section>
+
+        <!-- 연락처 섹션 -->
+        <section class="bg-white rounded-xl shadow-lg p-8 transform transition-all duration-300 hover:shadow-2xl">
+            <h2 class="text-3xl font-bold text-indigo-900 mb-8 flex items-center"><span class="text-primary mr-2">📧</span> Contact</h2>
+
+            <form id="contactForm" class="space-y-6">
+                <div>
+                    <label for="name" class="block text-indigo-700 font-medium mb-2">이름</label>
+                    <input type="text" id="name" name="name" required
+                           class="w-full px-4 py-3 border border-indigo-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200">
+                </div>
+                <div>
+                    <label for="email" class="block text-indigo-700 font-medium mb-2">이메일</label>
+                    <input type="email" id="email" name="email" required
+                           class="w-full px-4 py-3 border border-indigo-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200">
+                </div>
+                <div>
+                    <label for="message" class="block text-indigo-700 font-medium mb-2">메시지</label>
+                    <textarea id="message" name="message" rows="4" required
+                              class="w-full px-4 py-3 border border-indigo-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200"></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="w-full bg-primary text-white font-medium py-3 px-6 rounded-lg hover:bg-secondary transition-all duration-300 transform hover:scale-105">
+                        메시지 보내기
+                    </button>
+                </div>
+                <div id="formStatus" class="hidden text-center py-3 px-4 rounded-lg"></div>
+            </form>
+
+            <script>
+                document.getElementById('contactForm').addEventListener('submit', async (e) => {
+                    e.preventDefault();
+                    const formStatus = document.getElementById('formStatus');
+                    const submitButton = e.target.querySelector('button[type="submit"]');
+
+                    const name = document.getElementById('name').value.trim();
+                    const email = document.getElementById('email').value.trim();
+                    const message = document.getElementById('message').value.trim();
+
+                    if (!name || !email || !message) {
+                        formStatus.textContent = '모든 필드를 입력해주세요.';
+                        formStatus.className = 'block bg-yellow-100 text-yellow-700 py-2 px-4 rounded-lg';
+                        return;
+                    }
+
+                    try {
+                        submitButton.disabled = true;
+                        submitButton.textContent = '전송 중...';
+                        formStatus.className = 'hidden';
+
+                        // Discord Webhook URL로 메시지 전송
+                        const webhookUrl = 'YOUR_DISCORD_WEBHOOK_URL';
+                        const response = await fetch(webhookUrl, {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({
+                                content: `새로운 문의가 도착했습니다!\n\n이름: ${name}\n이메일: ${email}\n메시지: ${message}`
+                            })
+                        });
+
+                        if (response.ok) {
+                            formStatus.textContent = '메시지가 성공적으로 전송되었습니다.';
+                            formStatus.className = 'block bg-green-100 text-green-700 py-2 px-4 rounded-lg';
+                            e.target.reset();
+                        } else {
+                            throw new Error('메시지 전송에 실패했습니다. 다시 시도해주세요.');
+                        }
+                    } catch (error) {
+                        formStatus.textContent = error.message;
+                        formStatus.className = 'block bg-red-100 text-red-700 py-2 px-4 rounded-lg';
+                    } finally {
+                        submitButton.disabled = false;
+                        submitButton.textContent = '메시지 보내기';
+                    }
+                });
+            </script>
+        </section>
+    </div>
+</body>
+</html>
