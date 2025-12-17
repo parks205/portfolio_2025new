@@ -33,7 +33,7 @@
 <body class="bg-indigo-50">
     <div class="container mx-auto px-4 py-8">
         <!-- 헤더 섹션 -->
-        <header class="text-center mb-12">
+        <header id="about" class="text-center mb-8">
             <div class="mb-6">
                 <img src="사진.jpg" alt="프로필 이미지" class="w-32 h-32 mx-auto rounded-full bg-white p-2 shadow-lg border-4 border-primary">
             </div>
@@ -41,7 +41,7 @@
             <p class="text-lg text-indigo-700 mb-2">AI를 통해 많은 개발 경험을 쌓고 있는 개발자입니다.</p>
             <div class="max-w-md mx-auto mb-4 text-sm text-indigo-800 space-y-1">
                 <p>재능대학교 컴퓨터소프트웨어학과</p>
-                <p>관심 분야: 웹 백엔드 개발 · AI 기반 서비스</p>
+                <p>관심 분야: AI 기반 서비스</p>
                 <p>강점: 문제 해결 중심 사고와 팀 프로젝트 협업 경험</p>
             </div>
             <div class="flex justify-center space-x-4">
@@ -50,12 +50,19 @@
             </div>
         </header>
 
+        <!-- 상단 네비게이션 -->
+        <nav class="mb-8 flex justify-center space-x-4 text-sm font-medium">
+            <a href="#about" class="px-3 py-2 rounded-full text-indigo-700 hover:bg-indigo-100 transition-colors duration-200">소개</a>
+            <a href="#projects" class="px-3 py-2 rounded-full text-indigo-700 hover:bg-indigo-100 transition-colors duration-200">프로젝트</a>
+            <a href="#skills" class="px-3 py-2 rounded-full text-indigo-700 hover:bg-indigo-100 transition-colors duration-200">기술 스택</a>
+        </nav>
+
         <!-- 프로젝트 섹션 -->
-        <section class="mb-12 bg-white rounded-xl shadow-lg p-8 transform transition-all duration-300 hover:shadow-2xl">
+        <section id="projects" class="mb-12 bg-white rounded-xl shadow-lg p-8 transform transition-all duration-300 hover:shadow-2xl">
             <h2 class="text-3xl font-bold text-indigo-900 mb-8 flex items-center"><span class="text-primary mr-2">🚀</span> Projects</h2>
 
             <div class="mb-8 w-2/6 mx-auto">
-                <img src="haejo2.png" alt="Haejo 캡스톤 프로젝트 미리보기" class="w-full h-auto rounded-lg shadow-md mb-6" onerror="this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 1000 600\' fill=\'%23f3f4f6\'%3E%3Crect width=\'1000\' height=\'600\' /%3E%3Ctext x=\'50%25\' y=\'50%25\' font-family=\'Arial\' font-size=\'24\' fill=\'%239ca3af\' text-anchor=\'middle\' dominant-baseline=\'middle\'%3EHaejo Preview%3C/text%3E%3C/svg%3E'">
+                <img src="Haejo2.png" alt="Haejo 캡스톤 프로젝트 미리보기" class="w-full h-auto rounded-lg shadow-md mb-6" onerror="this.src='data:image/svg+xml;charset=utf-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 1000 600\' fill=\'%23f3f4f6\'%3E%3Crect width=\'1000\' height=\'600\' /%3E%3Ctext x=\'50%25\' y=\'50%25\' font-family=\'Arial\' font-size=\'24\' fill=\'%239ca3af\' text-anchor=\'middle\' dominant-baseline=\'middle\'%3EHaejo Preview%3C/text%3E%3C/svg%3E'">
             </div>
 
             <!-- 프로젝트 1: 캡스톤 - Haejo -->
@@ -126,7 +133,7 @@
         </section>
 
         <!-- 기술 스택 상세 섹션 -->
-        <section class="mb-12 bg-white rounded-xl shadow-lg p-8 transform transition-all duration-300 hover:shadow-2xl">
+        <section id="skills" class="mb-12 bg-white rounded-xl shadow-lg p-8 transform transition-all duration-300 hover:shadow-2xl">
             <h2 class="text-3xl font-bold text-indigo-900 mb-8 flex items-center"><span class="text-primary mr-2">🔧</span> 기술 스택</h2>
             <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
                 <div class="p-6 bg-indigo-50 rounded-lg card-hover">
