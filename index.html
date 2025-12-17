@@ -35,6 +35,15 @@
 </head>
 <body class="bg-slate-950 text-slate-100">
     <div class="container mx-auto px-4 py-8">
+        <!-- 상단 네비게이션 (스크롤시 상단 고정) -->
+        <nav class="sticky top-0 z-40 mb-8 bg-slate-950/90 backdrop-blur border-b border-slate-800">
+            <div class="flex justify-center space-x-4 text-sm font-medium py-2">
+                <a href="#about" class="px-3 py-2 rounded-full text-slate-100 hover:bg-slate-800 transition-colors duration-200">소개</a>
+                <a href="#projects" class="px-3 py-2 rounded-full text-slate-100 hover:bg-slate-800 transition-colors duration-200">프로젝트</a>
+                <a href="#skills" class="px-3 py-2 rounded-full text-slate-100 hover:bg-slate-800 transition-colors duration-200">기술 스택</a>
+            </div>
+        </nav>
+
         <!-- 헤더 섹션 -->
         <header id="about" class="text-center mb-8">
             <div class="mb-6">
@@ -53,15 +62,6 @@
             </div>
         </header>
 
-        <!-- 상단 네비게이션 (스크롤시 상단 고정) -->
-        <nav class="sticky top-0 z-40 mb-8 bg-slate-950/90 backdrop-blur border-b border-slate-800">
-            <div class="flex justify-center space-x-4 text-sm font-medium py-2">
-                <a href="#about" class="px-3 py-2 rounded-full text-slate-100 hover:bg-slate-800 transition-colors duration-200">소개</a>
-                <a href="#projects" class="px-3 py-2 rounded-full text-slate-100 hover:bg-slate-800 transition-colors duration-200">프로젝트</a>
-                <a href="#skills" class="px-3 py-2 rounded-full text-slate-100 hover:bg-slate-800 transition-colors duration-200">기술 스택</a>
-            </div>
-        </nav>
-
         <!-- 프로젝트 섹션 -->
         <section id="projects" class="mb-12 bg-slate-900 rounded-xl shadow-lg p-8 transform transition-all duration-300 hover:shadow-2xl">
             <h2 class="text-3xl font-bold text-slate-50 mb-8 flex items-center"><span class="text-primary mr-2">🚀</span> Projects</h2>
@@ -72,7 +72,7 @@
 
             <!-- 프로젝트 1: 캡스톤 - Haejo -->
             <div class="mb-8 border-b pb-6">
-                <h3 class="text-2xl font-semibold mb-3 text-indigo-900">AI 여행 일정 추천 서비스 - Haejo (캡스톤)</h3>
+                <h3 class="text-2xl font-semibold mb-3 text-slate-50">AI 여행 일정 추천 서비스 - Haejo (캡스톤)</h3>
                 <p class="text-slate-100 mb-2 flex items-center">
                     <span class="inline-block mr-2">🔗</span>
                     <a href="https://travel-planner-893.pages.dev/" target="_blank" class="hover:text-primary transition-colors duration-200">서비스 바로가기</a>
